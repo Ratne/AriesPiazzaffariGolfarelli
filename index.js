@@ -16,6 +16,7 @@ class Index {
     this.playPauseVideo()
     this.listenForCurrentTime()
     this.setupLayer()
+    this.showShowed()
   }
   async initPlayer() {
     const builder = new MediaBuilder(this.player);
@@ -150,6 +151,17 @@ class Index {
       this.layer.setAttribute('src','./assets/images/disegnoplay.png')
     }
   }
+
+  showShowed(){
+    const show = localStorage.getItem('showed') || 0
+    if (show === '1') {
+      document.querySelector(HIDDEN_CONTENT_ID).style.display = "block";
+      document.querySelector(HIDDEN_CONTENT_ID).style.margin = "0 auto";
+      document.querySelector(HIDDEN_CONTENT_ID).style.visibility = "visible";
+    }
+
+  }
+
   showHiddenItem() {
     document.querySelector(HIDDEN_CONTENT_ID).style.display = "block";
     document.querySelector(HIDDEN_CONTENT_ID).style.margin = "0 auto";
