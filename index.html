@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vidstack/styles/base.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vidstack/styles/ui/buttons.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vidstack/styles/ui/sliders.min.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/vidstack/dist/cdn/prod.js"></script>
+    <script src="https://cdn.veeplay.com/veeplay-web/latest/mp.bundle.js"></script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TM1WGBW8P1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-TM1WGBW8P1');
+    </script>
+
+    <!-- Hyros -->
+    <script>
+        var head = document.head;
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = "https://181653.t.hyros.com/v1/lst/universal-script?ph=fd2434a8203df7d959812e2ecb7627462805f2fcbed9429935c02f3c27f08d73&tag=!clicked&ref_url=" + document.URL ;
+        head.appendChild(script);
+    </script>
+
+    <title>Piazzaffari Podcast</title>
+    <style>
+
+        #headline {
+
+            padding-left: 20px;
+            padding-right: 20px;
+            line-height: 1.3em;
+
+        }
+
+        #sub_headline {
+
+            font-weight: 400;
+            line-height: 1.3em;
+
+        }
+
+        #_form_61_submit {
+
+            cursor: pointer;
+            text-align: center;
+            background: #2e7a34 !important;
+            border: 0 !important;
+            color: #fff !important;
+            padding: 18px !important;
+            width: 100%;
+            font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif !important;
+            font-size: 18px !important;
+            font-weight: 800;
+
+
+        }
+
+        #exitModal > div > div {
+
+            /* background-color: #cccccc; */
+            height: 500px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url("assets/Untitled-design-1-1.png");
+
+        }
+
+        .modal-content::before {
+
+            background-color: black!important;
+
+        }
+
+        #_form_61_ > h4 {
+
+            pointer-events: all;
+            color: #fff !important;
+            padding: 0;
+            border: 0;
+            -webkit-text-size-adjust: 100%;
+            vertical-align: baseline;
+            background: transparent;
+            outline: 0;
+            box-sizing: border-box;
+            margin-top: 0;
+            margin-right: 0;
+            margin-left: 0;
+            font-weight: 600;
+            margin-bottom: 0;
+            font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif !important;
+            font-size: 22px !important;
+            line-height: 1.3;
+
+
+        }
+
+        #pulsante_nascosto{
+            display: none;
+        }
+        .veeplay-overlay-bottom{
+            display: none !important;
+        }
+        #player{
+            height: 595px;
+        }
+        .layer {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            cursor: pointer;
+            z-index: 10;
+        }
+        .absolute {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        .restart {
+            cursor: pointer;
+            left: 50%;
+            z-index: 10;
+        }
+        .container {
+            max-width:1080px;
+        }
+        body {
+            font-family:Poppins;
+            font-size:13px;
+        }
+        footer {
+            font-family:Poppins;
+            font-size:13px;
+            font-weight:300;
+        }
+        h1, h2, h3, h4, h5, h6, i {
+            font-family:Oswald;
+        }
+        .badge {
+            font-size:13px;
+        }
+        i {
+            font-size:24px;
+        }
+        header {
+            min-height:90px;
+            display: flex;
+            align-items: center;
+        }
+        .btn-primary1 {
+            background:#2e7a34;
+            color:#fff;
+            font-size:20px;
+
+        }
+        h1 {
+            font-size:30px;
+            font-weight:430;
+        }
+        .bg-secondary1 {
+            background:#dddddd;
+        }
+        #main {
+            background-position: center top 25%;
+            background-image: linear-gradient(180deg,#2b8200 25%,rgba(12,36,0,0.28) 68%,rgba(0,4,10,0.21) 86%,rgba(0,0,0,0) 99%),url(https://piazzaffaripodcast.it/wp-content/uploads/2022/10/pexels-chris-schippers-421927-scaled.jpg)!important;
+            padding-top: 20px;
+            padding-right: 0px;
+            padding-bottom: 20px;
+            padding-left: 0px;
+            background-color: inherit!important;
+
+            z-index: 10;
+            box-shadow: 6px 6px 18px 0px rgb(0 0 0 / 30%);
+            position:relative;
+
+        }
+        @media (max-width:767px)
+        {
+            #main {
+                background-position: center;
+                background-image: linear-gradient(193deg,#468228 17%,rgba(0,0,0,0) 100%),url(https://piazzaffaripodcast.it/wp-content/uploads/2022/10/pexels-chris-schippers-421927-scaled.jpg)!important;
+            }
+            h1 {
+                font-size:21px;
+                font-weight:430;
+            }
+            i {
+                font-size:18px;
+                font-weight:500;
+            }
+            #player{
+                height: 200px;
+            }
+        }
+
+        .background_mask {
+            background-image: url(data:image/svg+xml;base64,PHN2ZyAgZmlsbD0icmdiYSgyMiwyMiwyMiwwLjkpIiB2aWV3Qm94PSIwIDAgMTkyMCAxNDQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0wLDE0NDBIMTkyMFYwSDBabTEwMjMuMDctMTM3Ljc1LDMwNy4yLTExODcuOTJBODUuODMsODUuODMsMCwwLDEsMTQxMy4zNiw1MGgzODQuNDNBNzIuMjEsNzIuMjEsMCwwLDEsMTg3MCwxMjIuMjFWMTMxNy43OWE3Mi4yMSw3Mi4yMSwwLDAsMS03Mi4yMSw3Mi4yMUgxMDkxQTcwLjE4LDcwLjE4LDAsMCwxLDEwMjMuMDcsMTMwMi4yNVoiLz48L3N2Zz4=);
+            mix-blend-mode: multiply;
+            z-index:9;
+        }
+
+        .background_mask {
+            background-size: calc(100% + 2px) calc(100% + 2px);
+            background-repeat: no-repeat;
+            background-position: 50%;
+            overflow: hidden;
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .main-content {
+            position:relative;
+            z-index:11;
+        }
+        p.ital {
+            font-size:20px;
+            font-weight:500;
+        }
+        .img-footer {
+            max-width:100px;
+        }
+
+        footer p {
+            font-size:13px;
+            font-weight:300;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+<header>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-6 offset-3 offset-sm-0 col-sm-2 p-sm-0 text-center text-sm-start">
+                <img class="img-fluid" src="https://piazzaffaripodcast.it/wp-content/uploads/2022/10/logo-orizzontale-1.png">
+            </div>
+            <div class="d-none d-sm-block col-sm-10 text-end">
+                <span class="badge bg-secondary1 text-dark">Hai bisogno di aiuto? Scrivici a info@piazzaffaripodcast.it</span>
+            </div>
+        </div>
+    </div>
+</header>
+<section id="main">
+    <div class="background_mask"></div>
+    <div class="container main-content">
+        <div class="row">
+            <div class="col-12 text-center py-3 px-sm-5" id="headline">
+                <h1 class="text-white"><u>Episodio 1</u>: La nuova strategia di FOREX Trading semiautomatica che sembra stia producendo guadagni da migliaia di euro al giorno per chi la utilizzaoperando per meno di 15 min. dal cellulare</h1>
+                <p class="ital text-white" id="sub_headline"><i>…anche senza avere esperienza nel Trading e partendo con un conto da €500″</i></p>
+                <div style="position: relative;">
+                    <!-- <media-player src="https://cdn.muse.ai/u/Q8kBnK2/a1d506377fe59ea21c8740d59be56b98151fa9789cb40ddfb708b3ad8c2c03a8/videos/hls.m3u8">
+                        <media-outlet></media-outlet>
+                    </media-player> -->
+                    <div id="player" style="width: 100%;"></div>
+
+                    <img src="./assets/images/disegnoascolta.png"class="layer img-fluid" />
+
+                    <div class="absolute restart"></div>
+                </div>
+                <p class="mt-3"><a class="btn btn-primary1" id="pulsante_nascosto" href="https://golfarelli.piazzaffaripodcast.it/checkouts/bundle-ffg-main/">CLICCA QUI PER ACCEDERE ALL'OFFERTA RISERVATA AGLI ASCOLTATORI</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="py-5">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-12 text-center">
+                <p><img class="img-fluid img-footer" src="https://piazzaffaripodcast.it/wp-content/uploads/2022/10/logo-verticale-1.png"></p>
+                <p>PIAZZA AFFARI PODCAST VIA U. FOSCOLO 4/E - 34074 MONFALCONE (GO)</p>
+                <p>P.IVA IT 01202070312 | CAP Sociale €10.000 i.v.</p>
+                <p>Tutti i Diritti Riservati</p>
+                <p><a href="#">Privacy Policy</a> | <a href="#">Cookie Policy</a></p>
+                <p>DISCLAIMER</p>
+                <div class="row">
+                    <div class="col-12 offset-md-3 col-md-6">
+                        <p>Non abbiamo nessuna affiliazione con Google LLC, Google o partner di Google. Tutti i marchi dei prodotti Google sono di proprietà di Google LLC. Questo sito non fa parte o è approvato da Meta Platform, Inc., Google, Twitter o qualsiasi piattaforma di social media in alcun modo. Tutti i nomi di prodotti, loghi e marchi appartengono ai rispettivi proprietari. Tutti i nomi di società, prodotti e servizi utilizzati in questo sito sono solo a scopo di identificazione. L’uso di questi nomi, loghi e marchi non implica la loro approvazione. FACEBOOK è un marchio di Meta Platforms, Inc. YOUTUBE e GOOGLE sono marchi di GOOGLE, LLC., TWITTER è un marchio di TWITTER, Inc.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+
+<div class="modal fade" id="exitModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">'
+        <div class="modal-content">
+            <div class="modal-body p-5">
+                <form method="POST" action="https://ariesmedia24314.activehosted.com/proc.php" id="_form_61_"  class="was-validated" novalidate>
+                    <input type="hidden" name="u" value="61" data-name="u">
+                    <input type="hidden" name="f" value="61" data-name="f">
+                    <input type="hidden" name="s" data-name="s">
+                    <input type="hidden" name="c" value="0" data-name="c">
+                    <input type="hidden" name="m" value="0" data-name="m">
+                    <input type="hidden" name="act" value="sub" data-name="act">
+                    <input type="hidden" name="v" value="2" data-name="v">
+                    <input type="hidden" name="or" value="26a71709025adff0862d446303ad4cea" data-name="or">
+                    <input data-autofill="false" type="hidden" id="field[1][]" name="field[1][]" value="~|" data-name="gdpr_privacy">
+                    <h4 class="text-center">Questo Podcast a breve non sarà più online. Vuoi ricevere la registrazione per poterlo guardare quando vuoi?</h4>
+                    <p class="text-center" style="color: white; margin-top: 7px;">Inserisci il tuo nome e la tua miglior email qui sotto per riceverlo nella tua casella di posta.</p>
+                    <div class="mb-3">
+                        <input class="form-control" type="text" id="fullname" name="fullname" placeholder="Nome" required data-name="fullname">
+                    </div>
+                    <div class="valid-feedback">Valid.</div>
+
+                    <div class="mb-3">
+                        <input class="form-control" type="text" id="email" name="email" placeholder="Indirizzo E-mail" required data-name="email">
+                    </div>
+                    <div class="form-check" style="margin-top: 7px; margin-bottom: 15px;">
+                        <input class="form-check-input" id="field_1Ho letto e preso visione della Normativa Sulla Privacy e acconsento al trattamento dei miei dati personali in conformità al regolamento UE n. 2016/679." type="checkbox" name="field[1][]" value="Ho letto e preso visione della Normativa Sulla Privacy e acconsento al trattamento dei miei dati personali in conformità al regolamento UE n. 2016/679." required data-name="gdpr_privacy">
+                        <label class="form-check-label" for="flexCheckChecked" style="color: white;">
+                            Ho letto e preso visione della Normativa Sulla <a href="//piazzaffaripodcast.it/privacy-policy/”" style="color: white;" target="_blank" rel="noopener">Privacy</a> e acconsento al trattamento dei miei dati personali in conformità al regolamento UE n. 2016/679.*
+                        </label>
+                    </div>
+                    <div class="mb-3">
+                        <button id="_form_61_submit" class="btn btn-primary" type="submit"> OK, VOGLIO IL LINK PER POTER GUARDARE IL PODCAST QUANDO VOGLIO! </button>
+                    </div>
+                    <div class="_form-thank-you" style="display:none;"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="cookiebar fade" aria-label="Gestione dei cookies">
+    <p>Questo sito utilizza cookie tecnici, analytics e di terze parti. <br />Proseguendo nella navigazione accetti l’utilizzo dei cookie.</p>
+    <div class="cookiebar-buttons">
+        <a href="#" class="cookiebar-btn">Preferenze<span class="visually-hidden">cookies</span></a>
+        <button data-bs-accept="cookiebar" class="cookiebar-btn cookiebar-confirm">Accetto<span class="visually-hidden"> i cookies</span></button>
+    </div>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+<script>
+    function addEvent(obj, evt, fn) {
+
+        if (obj.addEventListener) {
+            obj.addEventListener(evt, fn, false);
+        } else if (obj.attachEvent) {
+            obj.attachEvent("on" + evt, fn);
+        }    }    addEvent(document, 'mouseout', function (evt) {
+        var modalId = 'exitModal';
+
+        if (evt.toElement === null && evt.relatedTarget === null && !localStorage.getItem('modal.' + modalId)) {
+            var modal = new bootstrap.Modal('#' + modalId);
+
+            modal.show();
+            localStorage.setItem('modal.' + modalId, '1');
+        }
+    });
+</script>
+<script src="index.js" type="text/javascript"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-771472401"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-771472401');
+</script>
+
+<!-- Event snippet for View Podcast Page FFG conversion page -->
+<script>
+    gtag('event', 'conversion', {'send_to': 'AW-771472401/BSoSCNiiuI0YEJH47u8C'});
+</script>
+
+
+<!-- FF Pro Universal Code -->
+<script>!function(f,l,u,x,j,s,a,b){window.flux||(j="undefined"!=typeof fluxOptions?fluxOptions:{},s="undefined"!=typeof fluxDefaults?fluxDefaults:{},(a=l.createElement("script")).src="https://"+u+"/integration/lumetricv2.min.js?v="+x,a.type="text/javascript",a.async="true",queue=[],window.flux={track:function(){queue.push(arguments)}},a.onload=a.onreadystatechange=function(){var rs=this.readyState;if(!rs||"complete"==rs||"loaded"==rs)try{for(window.flux=new Lumetric(u,x,j,s);0!=queue.length;){var args=queue.pop();window.flux.track.apply(null,args)}}catch(e){}},(b=document.getElementsByTagName("script")[0]).parentNode.insertBefore(a,b))}(window,document,"link.piazzaffaripodcast.it","3.0.0");</script>
+
+<!-- FF Pro View Event -->
+<script>
+    flux.track("view")
+</script>
+
+</body>
+</html>
+
+
