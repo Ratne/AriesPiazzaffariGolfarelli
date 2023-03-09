@@ -127,13 +127,13 @@ class Index {
      * The key is the threshold expressed in seconds
      */
     const playback_threshold = {
-      3840: '?email='+wh_email, //webhook + email
+      10: '?email='+wh_email, //webhook + email
     }
 
     Object.keys(playback_threshold).map((key,i) => {
       if(this.player.currentPlaybackTime()>key) {
         this.showHiddenItem();
-      //  localStorage.setItem('showed',true)
+        localStorage.setItem('showed',"1")
 
         if(!wh_email) return
         this.callWebhook(playback_threshold[key])
