@@ -196,8 +196,28 @@
         @media (max-width:767px)
         {
             header {
-                min-height:65px;
+                min-height:55px;
             }
+            .imgNavLogo{
+                width: 100px;
+                margin-left: 30%;
+
+            }
+            .headNav{
+                margin-right: 13%;
+
+            }
+            .headOne{
+                margin: 1%;
+                line-height: 1.3em;
+                font-size: 19px;
+                font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
+            }
+            .headTwo{
+                margin: 1%;
+                font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
+            }
+
 
             #main {
                 background-position: center;
@@ -303,14 +323,13 @@
     <div class="container">
         <div class="row align-items-center navbar navbar-light">
             <div class="col-5 offset-sm-0 col-sm-2 p-sm-0 text-center text-sm-start">
-                <img class="img-fluid" src="https://piazzaffaripodcast.it/wp-content/uploads/2022/10/logo-orizzontale-1.png">
+                <img class="img-fluid imgNavLogo" src="https://piazzaffaripodcast.it/wp-content/uploads/2022/10/logo-orizzontale-1.png">
             </div>
             <div class="d-none d-sm-block col-sm-10 text-end">
                 <span class="badge bg-secondary1 text-dark">Hai bisogno di aiuto? Scrivici a info@piazzaffaripodcast.it</span>
             </div>
             <div class="col-7 d-block d-sm-none">
-                <button style="float:right;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span style="float:right;" class="navbar-toggler-icon headNav"></span>
                 </button>
             </div>
         </div>
@@ -321,8 +340,8 @@
     <div class="container main-content">
         <div class="row">
             <div class="col-12 text-center py-3 px-sm-5" id="headline">
-                <h1 class="text-white"><u>Episodio 1</u>: La nuova strategia di FOREX Trading semiautomatica che sembra stia producendo guadagni da migliaia di euro al giorno per chi la utilizzaoperando per meno di 15 min. dal cellulare</h1>
-                <p class="ital text-white" id="sub_headline"><i>…anche senza avere esperienza nel Trading e partendo con un conto da €500″</i></p>
+                <h1 class="text-white headOne"><u>Episodio 1</u>: La nuova strategia di FOREX Trading semiautomatica che sembra stia producendo guadagni da migliaia di euro al giorno per chi la utilizzaoperando per meno di 15 min. dal cellulare</h1>
+                <p class="ital text-white headTwo" id="sub_headline"><i>…anche senza avere esperienza nel Trading e partendo con un conto da €500″</i></p>
                 <div style="position: relative;">
                     <!-- <media-player src="https://cdn.muse.ai/u/Q8kBnK2/a1d506377fe59ea21c8740d59be56b98151fa9789cb40ddfb708b3ad8c2c03a8/videos/hls.m3u8">
                         <media-outlet></media-outlet>
@@ -493,5 +512,4 @@
 
 </body>
 </html>
-
 
