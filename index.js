@@ -1,5 +1,5 @@
 const HIDDEN_CONTENT_ID = '#pulsante_nascosto';
-const HLS_VIDEO = 'https://aries.b-cdn.net/Golfarelli_Podcast_2.mp4'
+const HLS_VIDEO = 'https://cdn.muse.ai/u/Q8kBnK2/353ebb135aac1aa4ba1d2834c1f9556e50fb8a781834375220a8e1b130b7966c/videos/video.mp4'
 
 class Index {
   constructor() {
@@ -128,7 +128,7 @@ class Index {
      * The key is the threshold expressed in seconds
      */
     const playback_threshold = {
-      10: '?email='+wh_email, //webhook + email
+      3840: '?email='+wh_email, //webhook + email
     }
 
     Object.keys(playback_threshold).map((key,i) => {
